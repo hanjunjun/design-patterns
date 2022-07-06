@@ -1,21 +1,30 @@
 package com.hanjunjun.designpatterns.creational.singleton;
 
+/**
+ * 懒汉-双重锁检查
+ */
 public class Sun4 {
-	private static Sun4 SUN;
+	// 实例对其他线程可见
+	private volatile static Sun4 SUN;
 
 	private Sun4() {
 
 	}
 
 	/**
-	 * 方法加入同步锁
-	 * 这种方法有个缺陷，如果有很多线程调用getInstance会造成都要排队，影响性能
+	 * 比Sun4的同步方法好些
+	 *
 	 * @return
 	 */
-	public static synchronized Sun4 getInstance() {
+	public static Sun4 getInstance() {
 		// 双重检查
 		if (SUN == null) {
-			SUN = new Sun4();
+			synchronized (Sun4.class) {
+				// 如果无日才造日
+				if (SUN == null) {
+					SUN = new Sun4();
+				}
+			}
 		}
 		return SUN;
 	}
