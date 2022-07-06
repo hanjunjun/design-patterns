@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.creational.factory;
 
+/**
+ * 小米鼠标
+ */
 public class XiaoMi implements Mouse{
 	@Override
 	public void produce() {

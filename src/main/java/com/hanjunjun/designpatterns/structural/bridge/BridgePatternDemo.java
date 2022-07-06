@@ -15,7 +15,7 @@ public class BridgePatternDemo {
 		greenCircle.draw();
 
 		// 画绿色的正方形
-		Shape square=new Square(10,20,5,new Green());
+		Shape square = new Square(10, 20, 5, new Green());
 		square.draw();
 	}
 }

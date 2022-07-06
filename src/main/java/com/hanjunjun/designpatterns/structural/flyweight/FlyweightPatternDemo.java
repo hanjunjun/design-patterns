@@ -12,9 +12,9 @@ public class FlyweightPatternDemo {
 		for (int i = 0; i < 20; ++i) {
 			Circle circle =
 					(Circle) ShapeFactory.getCircle(getRandomColor());
-			// circle.setX(getRandomX());
-			// circle.setY(getRandomY());
-			// circle.setRadius(100);
+			circle.setX(getRandomX());
+			circle.setY(getRandomY());
+			circle.setRadius(100);
 			circle.draw();
 		}
 	}

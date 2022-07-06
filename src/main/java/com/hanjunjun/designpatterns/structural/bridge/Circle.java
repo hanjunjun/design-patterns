@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.structural.bridge;
 
+/**
+ * 圆形
+ */
 public class Circle extends Shape {
 	private int x, y, radius;
 
@@ -10,8 +13,11 @@ public class Circle extends Shape {
 		this.radius = radius;
 	}
 
+	/**
+	 * 根据传入的颜色画图形
+	 */
 	@Override
 	public void draw() {
-		drawAPI.drawCircle(radius, x, y);
+		drawAPI.drawCircle("圆形",radius, x, y);
 	}
 }

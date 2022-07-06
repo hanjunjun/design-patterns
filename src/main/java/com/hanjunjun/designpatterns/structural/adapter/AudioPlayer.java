@@ -1,6 +1,12 @@
 package com.hanjunjun.designpatterns.structural.adapter;
 
+/**
+ * 音频播放器
+ */
 public class AudioPlayer implements MediaPlayer {
+	/**
+	 * 播放视频的适配器
+	 */
 	MediaAdapter mediaAdapter;
 
 	@Override

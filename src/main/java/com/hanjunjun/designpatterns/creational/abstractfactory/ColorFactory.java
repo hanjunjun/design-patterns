@@ -1,16 +1,19 @@
 package com.hanjunjun.designpatterns.creational.abstractfactory;
 
-public class ColorFactory extends AbstractFactory{
+/**
+ * 颜色工厂
+ */
+public class ColorFactory extends AbstractFactory {
 	@Override
 	public Color getColor(String color) {
-		if(color==null){
+		if (color == null) {
 			return null;
 		}
-		if(color.equalsIgnoreCase("red")){
+		if (color.equalsIgnoreCase("red")) {
 			return new Red();
-		}else if(color.equalsIgnoreCase("green")){
+		} else if (color.equalsIgnoreCase("green")) {
 			return new Green();
-		}else if(color.equalsIgnoreCase("blue")){
+		} else if (color.equalsIgnoreCase("blue")) {
 			return new Blue();
 		}
 		return null;

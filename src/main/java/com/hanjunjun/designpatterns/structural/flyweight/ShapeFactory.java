@@ -6,7 +6,7 @@ import java.util.HashMap;
  * 图形工厂
  */
 public class ShapeFactory {
-	// 最好使用堆栈，后进先出
+	// 如果是对象池的场景，最好使用堆栈，后进先出
 	private static final HashMap<String, Shape> circleMap = new HashMap<>();
 
 	public static Shape getCircle(String color) {

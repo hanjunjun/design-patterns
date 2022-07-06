@@ -14,6 +14,7 @@ public class Meal {
 
 	/**
 	 * 给套餐添加项目
+	 *
 	 * @param item
 	 */
 	public void addItem(Item item) {
@@ -22,6 +23,7 @@ public class Meal {
 
 	/**
 	 * 计算套餐的总价格
+	 *
 	 * @return
 	 */
 	public float getCost() {
@@ -35,11 +37,11 @@ public class Meal {
 	/**
 	 * 展示所有的套餐子项目
 	 */
-	public void showItems(){
-		for (Item item :items){
-			System.out.println("Item:"+item.name());
-			System.out.println("Packing:"+item.packing().pack());
-			System.out.println("Price:"+item.price());
+	public void showItems() {
+		for (Item item : items) {
+			System.out.println("Item:" + item.name());
+			System.out.println("Packing:" + item.packing().pack());
+			System.out.println("Price:" + item.price());
 		}
 	}
 }

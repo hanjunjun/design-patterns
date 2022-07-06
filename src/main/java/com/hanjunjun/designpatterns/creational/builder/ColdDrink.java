@@ -3,10 +3,11 @@ package com.hanjunjun.designpatterns.creational.builder;
 /**
  * 套餐子项目-冰饮料
  */
-public abstract class ColdDrink implements Item{
+public abstract class ColdDrink implements Item {
 
 	/**
 	 * 包装
+	 *
 	 * @return
 	 */
 	@Override
@@ -16,6 +17,7 @@ public abstract class ColdDrink implements Item{
 
 	/**
 	 * 价格
+	 *
 	 * @return
 	 */
 	@Override

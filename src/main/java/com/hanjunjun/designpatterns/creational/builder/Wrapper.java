@@ -3,9 +3,10 @@ package com.hanjunjun.designpatterns.creational.builder;
 /**
  * 纸包装
  */
-public class Wrapper implements Packing{
+public class Wrapper implements Packing {
 	/**
 	 * 包装（动词）
+	 *
 	 * @return
 	 */
 	@Override

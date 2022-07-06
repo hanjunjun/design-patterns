@@ -1,6 +1,15 @@
 package com.hanjunjun.designpatterns.creational.factory;
 
+/**
+ * 鼠标工厂
+ */
 public class MouseFactory {
+	/**
+	 * 生成基于指定信息的鼠标实体类对象
+	 *
+	 * @param mouseType 鼠标品牌
+	 * @return 具体的鼠标实现类
+	 */
 	public Mouse getMouse(String mouseType) {
 		if (mouseType == null) {
 			return null;

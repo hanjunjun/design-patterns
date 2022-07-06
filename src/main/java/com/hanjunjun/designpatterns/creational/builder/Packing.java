@@ -6,6 +6,7 @@ package com.hanjunjun.designpatterns.creational.builder;
 public interface Packing {
 	/**
 	 * 包装
+	 *
 	 * @return
 	 */
 	public String pack();

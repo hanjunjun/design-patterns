@@ -3,6 +3,9 @@ package com.hanjunjun.designpatterns.structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 人员信息实体
+ */
 public class Employee {
 	/**
 	 * 姓名
@@ -17,7 +20,7 @@ public class Employee {
 	 */
 	private int salary;
 	/**
-	 * 下属
+	 * 下属-儿子节点
 	 */
 	private List<Employee> subordinates;
 

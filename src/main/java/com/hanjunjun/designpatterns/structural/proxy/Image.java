@@ -1,5 +1,11 @@
 package com.hanjunjun.designpatterns.structural.proxy;
 
+/**
+ * 图像接口
+ */
 public interface Image {
-	public void display();
+	/**
+	 * 展示
+	 */
+	void display();
 }

@@ -17,6 +17,6 @@ public class RealImage implements Image {
 	}
 
 	private void loadFromDisk(String fileName) {
-		System.out.println("加载文件：" + fileName);
+		System.out.println("首次初始化图像，加载文件：" + fileName);
 	}
 }

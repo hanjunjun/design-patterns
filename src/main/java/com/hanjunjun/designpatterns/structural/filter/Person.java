@@ -1,5 +1,11 @@
 package com.hanjunjun.designpatterns.structural.filter;
 
+import lombok.Data;
+
+/**
+ * 个人信息实体
+ */
+@Data
 public class Person {
 	/**
 	 * 姓名
@@ -18,17 +24,5 @@ public class Person {
 		this.name = name;
 		this.gender = gender;
 		this.maritalStatus = maritalStatus;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public String getMaritalStatus() {
-		return maritalStatus;
 	}
 }

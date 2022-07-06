@@ -1,6 +1,9 @@
 package com.hanjunjun.designpatterns.structural.bridge;
 
-public class Square extends Shape{
+/**
+ * 正方形
+ */
+public class Square extends Shape {
 	private int x, y, radius;
 
 	public Square(int x, int y, int radius, DrawAPI drawAPI) {
@@ -10,8 +13,11 @@ public class Square extends Shape{
 		this.radius = radius;
 	}
 
+	/**
+	 * 根据传入的颜色画图形
+	 */
 	@Override
 	public void draw() {
-		drawAPI.drawCircle(radius, x, y);
+		drawAPI.drawCircle("正方形", radius, x, y);
 	}
 }

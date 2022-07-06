@@ -1,8 +1,11 @@
 package com.hanjunjun.designpatterns.structural.decorator;
 
-public class Circle implements Shape{
+/**
+ * 圆形
+ */
+public class Circle implements Shape {
 	@Override
 	public void draw() {
-		System.out.println("shape:圆形");
+		System.out.println("画一个圆形");
 	}
 }

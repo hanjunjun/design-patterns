@@ -1,9 +1,12 @@
 package com.hanjunjun.designpatterns.structural.bridge;
 
-public class Green implements DrawAPI{
+/**
+ * 给图形画绿色
+ */
+public class Green implements DrawAPI {
 	@Override
-	public void drawCircle(int radius, int x, int y) {
-		System.out.println("画图形[ color: 绿色, radius: "
-				+ radius +", x: " +x+", "+ y +"]");
+	public void drawCircle(String shapeName, int radius, int x, int y) {
+		System.out.println("画" + shapeName + "[ color: 绿色, radius: "
+				+ radius + ", x: " + x + ", " + y + "]");
 	}
 }

@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.structural.adapter;
 
+/**
+ * VLC播放器
+ */
 public class VlcPlayer implements AdvancedMediaPlayer {
 	@Override
 	public void playVlc(String fileName) {

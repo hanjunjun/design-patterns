@@ -1,24 +1,29 @@
 package com.hanjunjun.designpatterns.creational.prototype;
 
-import java.util.Random;
-
 /**
  * 子弹
  */
 public class Bullet implements Cloneable {
 	private int size;
 
-	public Bullet(){
+	public Bullet() {
 
 	}
+
 	public void setSize(int size) {
 		this.size = size;
 	}
 
-	public int getSize(){
+	public int getSize() {
 		return this.size;
 	}
 
+	/**
+	 * 克隆一发子弹
+	 *
+	 * @return
+	 * @throws CloneNotSupportedException
+	 */
 	@Override
 	protected Bullet clone() throws CloneNotSupportedException {
 		return (Bullet) super.clone();

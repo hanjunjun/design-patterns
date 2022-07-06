@@ -10,7 +10,7 @@ public class DecoratorPatternDemo {
 		shape.draw();
 
 		System.out.println("-------------------------");
-		System.out.println("红色的圆形包装之后的对象：");
+		System.out.println("红色的圆形装饰之后的对象：");
 		ShapeDecorator redCircle = new RedShapeDecorator(shape);
 		redCircle.draw();
 
@@ -18,5 +18,6 @@ public class DecoratorPatternDemo {
 		System.out.println("被多个装饰器嵌套包装之后的对象：");
 		ShapeDecorator redCircle1 = new RedShapeDecorator(new RedShapeDecorator(new RedShapeDecorator(new Circle())));
 		redCircle1.draw();
+		System.out.println("总结：可以看到装饰器自定义方法setRedBorder()被调用了3次");
 	}
 }

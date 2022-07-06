@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.creational.factory;
 
+/**
+ * 牧马人鼠标
+ */
 public class MuMaRen implements Mouse{
 	@Override
 	public void produce() {
