@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.behavioral.interpreter;
 
+/**
+ * 与运算表达式
+ */
 public class AndExpression implements Expression {
 	private Expression expr1 = null;
 	private Expression expr2 = null;

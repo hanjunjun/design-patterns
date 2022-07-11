@@ -5,13 +5,13 @@ package com.hanjunjun.designpatterns.behavioral.mediator;
  */
 public abstract class Mediator {
 	/**
-	 * 注册同事
+	 * 注册客户
 	 * @param colleague
 	 */
 	public abstract void register(Colleague colleague);
 
 	/**
-	 * 给除colleague以外的所有同事发送消息
+	 * 给除自己以外的所有客户发送消息
 	 * @param colleague
 	 */
 	public abstract void relay(Colleague colleague);

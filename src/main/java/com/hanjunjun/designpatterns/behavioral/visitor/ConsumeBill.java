@@ -20,6 +20,11 @@ public class ConsumeBill implements Bill {
 		this.item = item;
 	}
 
+	/**
+	 * 接收访问者的访问
+	 *
+	 * @param visitor
+	 */
 	@Override
 	public void accept(AccountBookVisitor visitor) {
 		visitor.visit(this);
@@ -30,6 +35,7 @@ public class ConsumeBill implements Bill {
 	 *
 	 * @return
 	 */
+	@Override
 	public double getAmount() {
 		return amount;
 	}
@@ -39,6 +45,7 @@ public class ConsumeBill implements Bill {
 	 *
 	 * @return
 	 */
+	@Override
 	public String getItem() {
 		return item;
 	}

@@ -1,8 +1,11 @@
 package com.hanjunjun.designpatterns.behavioral.interpreter;
 
-public class OrExpression implements Expression{
-	private Expression expr1=null;
-	private Expression expr2=null;
+/**
+ * 或运算表达式
+ */
+public class OrExpression implements Expression {
+	private Expression expr1 = null;
+	private Expression expr2 = null;
 
 	public OrExpression(Expression expr1, Expression expr2) {
 		this.expr1 = expr1;
@@ -11,6 +14,6 @@ public class OrExpression implements Expression{
 
 	@Override
 	public boolean interpret(String context) {
-		return expr1.interpret(context)||expr2.interpret(context);
+		return expr1.interpret(context) || expr2.interpret(context);
 	}
 }

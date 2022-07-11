@@ -28,6 +28,8 @@ public class AccountBook {
 	 */
 	public void show(AccountBookVisitor visitor) {
 		for (Bill bill : billList) {
+			String type = bill.getClass().getSimpleName().equalsIgnoreCase("IncomeBill") ? "收入" : "支出";
+			System.out.println(visitor.getClass().getSimpleName() + "查看" + type + "订单：" + bill.getItem() + ",金额：" + bill.getAmount());
 			bill.accept(visitor);
 		}
 	}

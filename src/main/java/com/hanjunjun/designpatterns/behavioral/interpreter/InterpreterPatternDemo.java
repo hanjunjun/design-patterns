@@ -5,7 +5,8 @@ package com.hanjunjun.designpatterns.behavioral.interpreter;
  */
 public class InterpreterPatternDemo {
 	/**
-	 * 规则：Robert和John是男性
+	 * 规则：罗伯特和约翰是男性
+	 *
 	 * @return
 	 */
 	public static Expression getMaleExpression() {
@@ -15,7 +16,8 @@ public class InterpreterPatternDemo {
 	}
 
 	/**
-	 * 规则：Julie是一个已婚的女性
+	 * 规则：朱莉是一个已婚的女性
+	 *
 	 * @return
 	 */
 	public static Expression getMarriedWomanExpression() {
@@ -25,12 +27,14 @@ public class InterpreterPatternDemo {
 	}
 
 	public static void main(String[] args) {
-		Expression isMale=getMaleExpression();
-		Expression isMarriedWoman=getMarriedWomanExpression();
+		// 获取规则：罗伯特和约翰是男性
+		Expression isMale = getMaleExpression();
+		// 获取规则：朱莉是一个已婚的女性
+		Expression isMarriedWoman = getMarriedWomanExpression();
 
-		System.out.println("约翰是男性吗？"+isMale.interpret("约翰"));
-		System.out.println("张三是男性吗？"+isMale.interpret("张三"));
-		System.out.println("朱莉是已婚女性吗？"+isMarriedWoman.interpret("朱莉已婚"));
-		System.out.println("朱莉是已婚女性吗？"+isMarriedWoman.interpret("张三已婚"));
+		System.out.println("约翰是男性吗？" + isMale.interpret("约翰"));
+		System.out.println("张三是男性吗？" + isMale.interpret("张三"));
+		System.out.println("朱莉是已婚女性吗？" + isMarriedWoman.interpret("朱莉已婚"));
+		System.out.println("朱莉是已婚女性吗？" + isMarriedWoman.interpret("张三已婚"));
 	}
 }

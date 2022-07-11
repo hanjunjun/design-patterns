@@ -7,13 +7,17 @@ import java.util.List;
  * 命令的接收并处理
  */
 public class Broker {
-	private List<Order>orderList=new ArrayList<>();
+	/**
+	 * 待处理命令操作集合
+	 */
+	private List<Order> orderList = new ArrayList<>();
 
 	/**
 	 * 接收命令
+	 *
 	 * @param order
 	 */
-	public void takeOrder(Order order){
+	public void takeOrder(Order order) {
 		orderList.add(order);
 	}
 
@@ -21,8 +25,8 @@ public class Broker {
 	 * 下订单
 	 * 遍历命令并执行
 	 */
-	public void placeOrders(){
-		for (Order order:orderList){
+	public void placeOrders() {
+		for (Order order : orderList) {
 			order.execute();
 		}
 		orderList.clear();

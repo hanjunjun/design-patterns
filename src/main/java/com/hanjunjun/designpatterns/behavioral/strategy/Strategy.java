@@ -1,7 +1,7 @@
 package com.hanjunjun.designpatterns.behavioral.strategy;
 
 /**
- * 抽象策略类
+ * 策略抽象类
  */
 public interface Strategy {
 	/**

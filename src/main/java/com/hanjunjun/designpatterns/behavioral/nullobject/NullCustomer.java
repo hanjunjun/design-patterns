@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.behavioral.nullobject;
 
+/**
+ * 空对象
+ */
 public class NullCustomer extends AbstractCustomer {
 	public NullCustomer(String name) {
 		this.name = name;
@@ -12,6 +15,6 @@ public class NullCustomer extends AbstractCustomer {
 
 	@Override
 	public String getName() {
-		return name;
+		return this.name;
 	}
 }

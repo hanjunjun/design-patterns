@@ -1,7 +1,7 @@
 package com.hanjunjun.designpatterns.behavioral.state;
 
 /**
- * 抽象状态
+ * 状态的抽象
  */
 public interface State {
 	/**

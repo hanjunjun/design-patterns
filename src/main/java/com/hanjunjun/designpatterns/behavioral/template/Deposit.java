@@ -7,6 +7,6 @@ public class Deposit extends AbstractTemplate {
 
 	@Override
 	void handleDesignatedBusiness() {
-		System.out.println("--存款");
+		System.out.println("--办理存款");
 	}
 }

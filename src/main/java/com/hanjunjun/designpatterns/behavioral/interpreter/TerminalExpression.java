@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.behavioral.interpreter;
 
+/**
+ * 字符串包含计算表达式
+ */
 public class TerminalExpression implements Expression {
 	private String data;
 

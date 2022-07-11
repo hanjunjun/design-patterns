@@ -1,8 +1,11 @@
 package com.hanjunjun.designpatterns.behavioral.state;
 
+import lombok.Data;
+
 /**
  * 状态控制上下文
  */
+@Data
 public class DownloadStateContext {
 	/**
 	 * 当前状态
@@ -88,44 +91,22 @@ public class DownloadStateContext {
 		this.currentState.complete(success, msg);
 	}
 
+	/**
+	 * 获取当前任务的状态
+	 *
+	 * @return
+	 */
 	public State getCurrentState() {
 		return currentState;
 	}
 
+	/**
+	 * 设置当前任务状态
+	 *
+	 * @param currentState
+	 */
 	public void setCurrentState(State currentState) {
 		this.currentState = currentState;
 		System.out.println("当前状态：" + this.currentState.name());
-	}
-
-	public State getNotStartedDownloadState() {
-		return notStartedDownloadState;
-	}
-
-	public void setNotStartedDownloadState(State notStartedDownloadState) {
-		this.notStartedDownloadState = notStartedDownloadState;
-	}
-
-	public State getDownloading() {
-		return downloading;
-	}
-
-	public void setDownloading(State downloading) {
-		this.downloading = downloading;
-	}
-
-	public State getSuspendDownload() {
-		return suspendDownload;
-	}
-
-	public void setSuspendDownload(State suspendDownload) {
-		this.suspendDownload = suspendDownload;
-	}
-
-	public State getDownloadComplete() {
-		return downloadComplete;
-	}
-
-	public void setDownloadComplete(State downloadComplete) {
-		this.downloadComplete = downloadComplete;
 	}
 }

@@ -16,6 +16,10 @@ public class OrCriteria implements Criteria {
 
 	/**
 	 * 返回或过滤器满足条件的集合
+	 * 跟解释器模式的区别是过滤之后返回值不一样
+	 * 过滤器是返回过滤之后的数据
+	 * 解释器是返回bool值
+	 *
 	 * @param persons
 	 * @return
 	 */

@@ -34,6 +34,7 @@ public class IncomeBill implements Bill {
 	 *
 	 * @return
 	 */
+	@Override
 	public double getAmount() {
 		return amount;
 	}
@@ -43,6 +44,7 @@ public class IncomeBill implements Bill {
 	 *
 	 * @return
 	 */
+	@Override
 	public String getItem() {
 		return item;
 	}

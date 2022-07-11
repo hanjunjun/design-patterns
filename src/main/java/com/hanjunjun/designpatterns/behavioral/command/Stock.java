@@ -2,7 +2,7 @@ package com.hanjunjun.designpatterns.behavioral.command;
 
 /**
  * 股票买入或卖出命令包装类
- * 命令集合封装
+ * 命令操作集合封装
  */
 public class Stock {
 	/**
