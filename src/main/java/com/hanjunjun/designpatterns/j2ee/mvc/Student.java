@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.mvc;
 
+/**
+ * MVC的模型
+ */
 public class Student {
 	private String rollNo;
 	private String name;

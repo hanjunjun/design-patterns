@@ -1,5 +1,9 @@
 package com.hanjunjun.designpatterns.j2ee.dataaccessobject;
 
+/**
+ * 数据对象
+ * 学生实体
+ */
 public class Student {
 	private String name;
 	private int rollNo;

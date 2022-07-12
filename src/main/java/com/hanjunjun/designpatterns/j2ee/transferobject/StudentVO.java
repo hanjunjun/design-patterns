@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.transferobject;
 
+/**
+ * 传输对象
+ */
 public class StudentVO {
 	private String name;
 	private int rollNo;

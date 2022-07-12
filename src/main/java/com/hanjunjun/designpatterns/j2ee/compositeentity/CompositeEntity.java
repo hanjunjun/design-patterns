@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.compositeentity;
 
+/**
+ * 创建组合实体
+ */
 public class CompositeEntity {
 	private CoarseGrainedObject cgo = new CoarseGrainedObject();
 

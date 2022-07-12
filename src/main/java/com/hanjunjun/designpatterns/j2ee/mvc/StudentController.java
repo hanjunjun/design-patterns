@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.mvc;
 
+/**
+ * MVC的控制器
+ */
 public class StudentController {
 	private Student model;
 	private StudentView view;

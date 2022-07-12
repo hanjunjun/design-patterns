@@ -23,6 +23,11 @@ public class Cache {
 		return null;
 	}
 
+	/**
+	 * 添加服务
+	 * 如果服务已存在，则退出
+	 * @param newService
+	 */
 	public void addService(Service newService) {
 		boolean exists = false;
 		for (Service service : services) {

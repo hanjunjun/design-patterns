@@ -3,6 +3,9 @@ package com.hanjunjun.designpatterns.j2ee.transferobject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 业务对象
+ */
 public class StudentBO {
 	List<StudentVO> students;
 
@@ -14,20 +17,42 @@ public class StudentBO {
 		students.add(student2);
 	}
 
-	public void deleteStudent(StudentVO student){
+	/**
+	 * 删除学生
+	 *
+	 * @param student
+	 */
+	public void deleteStudent(StudentVO student) {
 		students.remove(student.getRollNo());
-		System.out.println("学生：RollNo"+student.getRollNo()+"已从数据库中删除");
+		System.out.println("学生：RollNo" + student.getRollNo() + "已从数据库中删除");
 	}
 
-	public List<StudentVO>getAllStudents(){
+	/**
+	 * 获取所有学生
+	 *
+	 * @return
+	 */
+	public List<StudentVO> getAllStudents() {
 		return students;
 	}
 
-	public StudentVO getStudent(int rollNo){
+	/**
+	 * 获取指定学号的学生
+	 *
+	 * @param rollNo
+	 * @return
+	 */
+	public StudentVO getStudent(int rollNo) {
 		return students.get(rollNo);
 	}
-	public void updateStudent(StudentVO student){
+
+	/**
+	 * 更新学生信息
+	 *
+	 * @param student
+	 */
+	public void updateStudent(StudentVO student) {
 		students.get(student.getRollNo()).setName(student.getName());
-		System.out.println("学生：Roll No"+student.getRollNo()+"已在数据库中更新");
+		System.out.println("学生：Roll No" + student.getRollNo() + "已在数据库中更新");
 	}
 }

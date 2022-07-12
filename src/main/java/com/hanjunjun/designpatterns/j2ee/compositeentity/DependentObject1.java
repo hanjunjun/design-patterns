@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.compositeentity;
 
+/**
+ * 依赖对象
+ */
 public class DependentObject1 {
 	private String data;
 

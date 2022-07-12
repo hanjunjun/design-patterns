@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.compositeentity;
 
+/**
+ * 创建使用组合实体的客户端类
+ */
 public class Client {
 	private CompositeEntity compositeEntity = new CompositeEntity();
 

@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.mvc;
 
+/**
+ * MVC设计模式
+ */
 public class MVCPatternDemo {
 	public static void main(String[] args) {
 		// 查询学生数据
@@ -20,7 +23,6 @@ public class MVCPatternDemo {
 		controller.setStudentName("凡人修仙");
 
 		// view根据model生成数据
-		System.out.println("-------------------------");
 		System.out.println("打印视图渲染结果：");
 		controller.updateView();
 	}

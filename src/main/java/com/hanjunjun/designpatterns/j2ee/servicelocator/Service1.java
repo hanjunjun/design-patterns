@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.servicelocator;
 
+/**
+ * 具体的服务
+ */
 public class Service1 implements Service {
 	@Override
 	public String getName() {

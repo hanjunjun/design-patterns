@@ -6,10 +6,10 @@ package com.hanjunjun.designpatterns.j2ee.servicelocator;
 public class InitialContext {
 	public Object lookup(String jndiName) {
 		if (jndiName.equalsIgnoreCase("Service1")) {
-			System.out.println("查找和创建一个新的Service1对象");
+			System.out.println("创建一个新的Service1对象");
 			return new Service1();
 		} else if (jndiName.equalsIgnoreCase("Service2")) {
-			System.out.println("查找和创建一个新的Service2对象");
+			System.out.println("创建一个新的Service2对象");
 			return new Service2();
 		}
 		return null;

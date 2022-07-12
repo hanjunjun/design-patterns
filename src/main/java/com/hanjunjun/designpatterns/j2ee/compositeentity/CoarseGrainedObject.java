@@ -1,5 +1,8 @@
 package com.hanjunjun.designpatterns.j2ee.compositeentity;
 
+/**
+ * 创建粗粒度对象
+ */
 public class CoarseGrainedObject {
 	DependentObject1 do1 = new DependentObject1();
 	DependentObject2 do2 = new DependentObject2();
