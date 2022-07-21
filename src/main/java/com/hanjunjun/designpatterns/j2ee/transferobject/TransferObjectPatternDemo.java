@@ -6,7 +6,7 @@ package com.hanjunjun.designpatterns.j2ee.transferobject;
  * BO：业务对象
  * BO获取VO传输对象
  */
-public class TransferObjectPattern {
+public class TransferObjectPatternDemo {
 	public static void main(String[] args) {
 		StudentBO studentBusinessObject = new StudentBO();
 		// 输出所有学生
