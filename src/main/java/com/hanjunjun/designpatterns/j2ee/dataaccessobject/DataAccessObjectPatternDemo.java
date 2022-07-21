@@ -3,7 +3,7 @@ package com.hanjunjun.designpatterns.j2ee.dataaccessobject;
 /**
  * 数据访问对象模式
  */
-public class DataAccessObjectPattern {
+public class DataAccessObjectPatternDemo {
 	public static void main(String[] args) {
 		// 定义一个数据访问DAO对象
 		StudentDao studentDao = new StudentDaoImpl();
